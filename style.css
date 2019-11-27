@@ -1,0 +1,66 @@
+.app {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 20% 5% 5% 5% 75%;
+    grid-template-areas:  
+        'jumbotron jumbotron jumbotron'
+        '. add-btn .'
+        '. remove-complete-btn .'
+        '. remove-all-btn .'
+        '. list .'
+
+        ;
+}
+
+.jumbotron {
+    grid-area: jumbotron;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(36,103,194,0.86) 49%, rgba(0,212,255,1) 100%); 
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+img {
+    height: 40px;
+}
+
+#add-btn {
+    grid-area: add-btn;
+}
+
+.input-group {
+    justify-content: center;
+}
+
+#remove-all-btn {
+    grid-area: remove-all-btn;
+}
+
+#remove-complete-btn {
+    grid-area: remove-complete-btn;
+}
+
+#list {
+    grid-area: list;
+    padding: 30px;
+}
+
+.btn {
+    background: rgba(2, 0, 36, 0.082);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(94,84,142,1) 49%, rgba(0,212,255,1) 100%);
+    color: rgb(194, 177, 155);
+}
+
+li {
+    font-size: 2em;
+    transition: 2s;
+}
+
+.complete {
+    opacity: 50%;
+    text-decoration: line-through;
+    text-decoration-color: cornflowerblue;
+}

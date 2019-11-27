@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ToDOM</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="app">
+      <div class="jumbotron"><h1><img src="./PGP.png" alt="">Todo</h1>
+          <p class="lead">Keep track of all your pending tasks.</p>
+      </div>
+      <div class="input-group mb-3" id="add-btn">
+        <div class="input-group-prepend">
+          <button class="add-todo btn btn-outline-secondary">ADD</button>
+        </div>
+        <input type="text" class="todo-input form-control" placeholder="Add to your todo list!" aria-label="Example text with button addon" aria-describedby="button-addon1">
+      </div>
+      <div class="input-group mb-3" id="remove-complete-btn">
+        <button class="remove-complete btn btn-outline-secondary">REMOVE COMPLETE</button>
+      </div>
+      <div class="input-group mb-3" id="remove-all-btn">
+        <button class="remove-all btn btn-outline-secondary">REMOVE ALL</button>
+      </div>
+      <div class="list-group" id="list">
+        <ol class="todo-list"></ol>
+      </div>
+    </div>
+    <script src = "./createObject.js"></script>
+    <script src = "./markComplete.js"></script>
+    <script src = "./add.js"></script>
+    <script src = "./removeAll.js"></script>
+    <script src="./removeComplete.js"></script>
+  </body>
+</html>
